@@ -3,5 +3,5 @@ function click(){
 }
 
 function changeColor() {
-	document.getElementById("first").style.color = "blue";
+	document.getElementById("first").style.color = document.getElementById("color").value;
 }
