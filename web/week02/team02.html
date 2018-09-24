@@ -10,7 +10,13 @@
 <div id="first">First div</div>
 <div id="second">Second div</div>
 <div id="third">Third div</div>
-<button type="button" onclick="click()" id="Button1" value="Click Me"></button>
+<button type="button" onclick="click()" id="Button1">Click Me</button>
+
+<script>
+function click() {
+	document.getElementById("Button1").innerHTML = "Clicked";
+ }
+</script>
 
 <form>
 <input type="text" id="textBox"><br>
