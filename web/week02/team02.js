@@ -1,7 +1,7 @@
 function click(){
-	document.getElementById("Button1").innerHTML = "Clicked";
+	document.getElementById("Button1").value = "Clicked";
 }
 
 function changeColor() {
-	document.getElementById("first").style.color = document.getElementById("color").value;
+	document.getElementById("first").style.color = color;
 }
