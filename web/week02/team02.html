@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>TEAM 02</title>
-<link rel="stylesheet" type="text/css" href="team02.css">
-<script src="team02.js"></script>
-</head>
-<body>
-<script>
-function click(){
-	document.getElementById("Button1").value = "Clicked";
-}
-</script>
+	<head>
+		<title>Team Activity 02 - Client-side review</title>
+		<link rel="stylesheet" type="text/css" href="team02.css">
+		<script src="team02.js"></script>
+	</head>
 
-<div id="first">First div</div>
-<div id="second">Second div</div>
-<div id="third">Third div</div>
-<input type="button" onclick="click()" id="Button1" value="Click Me"></input>
+	<body>
+		<div id="div1" class="div-first hover-bold">This is the first div.</div>
+		<div id="div2" class="div-later hover-bold">This is the second div.</div>
+		<div id="div3" class="div-later hover-bold">This is the third div.</div>
 
-<form>
-<input type="text" id="textBox"><br>
-<input type="submit" id="color" value="Change Color" onclick="changeColor()">
-</form>
+		<button onclick="clickMe();">Click me!</button><br/>
 
-</body>
+		<label for="txtColor">Color:</label> <input type="text" id="txtColor" placeholder="#cccccc"><br />
+
+		<button onclick="changeColor();">Change color</button>
+
+	</body>
+
 </html>
