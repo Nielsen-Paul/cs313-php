@@ -10,12 +10,6 @@ ul {
 	background-color: darkred;
 }
 
-li:link, li:visited {
-	color: white;
+li {
     display: inline;
-	text-decoration: none;
-}
-
-li:hover, li:active {
-	color: black;
 }
