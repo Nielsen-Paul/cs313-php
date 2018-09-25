@@ -8,9 +8,16 @@ ul {
     margin: 0;
     padding: 0;
 	background-color: darkred;
-	font-size: 50px;
 }
 
-li {
+li:link, li:visited {
+	color: white;
     display: inline;
+	padding: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+li:hover, li:active {
+	color: black;
 }
