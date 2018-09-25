@@ -13,3 +13,7 @@ ul {
 li {
     display: inline;
 }
+
+#ninerHeader {
+    text-align: center;
+}

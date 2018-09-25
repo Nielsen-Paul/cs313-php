@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<header><img src="49erheader.jpg" alt="49er Header"></header>
+<header><img id="ninerHeader" src="49erheader.jpg" alt="49er Header"></header>
 <header>
 <ul>
   <li><a href="index.php">Home</a></li>
