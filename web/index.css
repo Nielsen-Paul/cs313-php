@@ -13,7 +13,6 @@ ul {
 li:link, li:visited {
 	color: white;
     display: inline;
-	text-align: center;
 	text-decoration: none;
 }
 
