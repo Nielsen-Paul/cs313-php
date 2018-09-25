@@ -3,7 +3,7 @@ function clickMe(){
 }
 
 function changeColor() {
-	var textbox_id = "textbox";
+	var textbox_id = "textBox";
 	var textbox = document.getElementById(textbox_id);
 	
 	var div_id = "first";
