@@ -23,7 +23,7 @@ li {
 }
 
 #newsFeed {
-    height: 500px;
+    height: 400px;
     width: 30%;
     background-color: #ffc878;
 	border: 5px solid darkred;
@@ -33,7 +33,7 @@ li {
 
 #main {
 	background-color: #ffc878;
-	height: 500px;
+	height: 400px;
 	width: 1000px;
 	padding: 10px;
 	float: left;

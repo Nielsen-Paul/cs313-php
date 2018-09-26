@@ -16,7 +16,9 @@
 		</header>
 		<br>
 		<div id="main">
-			<img id="jimmyG" src="gimmyG.jpg" alt="Garoppolo Hurt">
+			<div id="jimmyG">
+				<img src="gimmyG.jpg" alt="Garoppolo Hurt">
+			</div>
 		</div>
 		<div id="newsFeed">
 			<h3>Latest '9er News</h3>
