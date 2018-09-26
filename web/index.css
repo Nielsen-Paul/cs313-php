@@ -15,11 +15,12 @@ li {
 }
 
 #ninerHeader {
-    text-align: center;
+	text-align: center;
+	height: 50px;
 }
 
 #navBar {
-	height: 50 px;
+	height: 40px;
 	text-align: center;
 	background-color: darkred;
 	color: white;
