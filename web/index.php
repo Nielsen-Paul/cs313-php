@@ -12,7 +12,7 @@
   <li><a href="assignments.php">Assignments</a></li>
 </ul>
 </header>
-
+<br>
 <div id="newsFeed"></div>
 
 
