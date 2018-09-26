@@ -13,7 +13,11 @@
 </ul>
 </header>
 <br>
-<div id="newsFeed"></div>
+<div id="newsFeed">
+<h3>Latest '9er News</h3>
+<a>Gimmy G will miss the rest of the season with torn ACL</a>
+<a>Marquis Goodwin is back</a>
+</div>
 
 
 </body>
