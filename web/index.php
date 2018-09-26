@@ -7,9 +7,9 @@
 	<body>
 		<header id="ninerHeader">
 			<img  src="49erheader.jpg" alt="49er Header">
-		</header>
-		<header id="navBar">
-			<p>Homepage      Assignments Page</p>
+			<div id="navBar">
+				Homepage    Assignments Page
+			</div>
 		</header>
 		<br>
 		<div id="main">
