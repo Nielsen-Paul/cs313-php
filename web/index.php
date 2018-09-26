@@ -24,15 +24,5 @@
 				<br>
 				<a>Marquis Goodwin is back</a>
 		</div>
-		<br>
-		<br>
-		<br>
-		<footer id="navHeader">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="assignments.php">Assignments</a></li>
-		</ul>
-		</footer>
-
 	</body>
 </html>
