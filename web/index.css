@@ -28,6 +28,7 @@ li {
     background-color: #ffc878;
 	border: 5px solid darkred;
 	padding: 10px;
+	float: right;
 }
 
 #main {
