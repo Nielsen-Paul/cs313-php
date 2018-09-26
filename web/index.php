@@ -9,7 +9,7 @@
 			<img  src="49erheader.jpg" alt="49er Header">
 		</header>
 		<header id="navBar">
-		
+			<p>Homepage      Assignments Page</p>
 		</header>
 		<br>
 		<div id="main">
