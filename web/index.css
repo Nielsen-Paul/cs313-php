@@ -27,14 +27,15 @@ li {
     width: 25%;
     background-color: #ffc878;
 	border: 5px solid darkred;
-	float: right;
 	padding: 10px;
 }
 
 #main {
 	background-color: #ffc878;
-	width: 74%;
+	height: 400px;
+	width: 75%;
 	padding: 10px;
+	float: left;
 }
 
 h3 {
