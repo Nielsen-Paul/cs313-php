@@ -23,6 +23,9 @@
 				<a>Jimmy G will miss the rest of the season with torn ACL</a>
 				<a>Marquis Goodwin is back</a>
 		</div>
+		<br>
+		<br>
+		<br>
 		<footer id="navHeader">
 		<ul>
 			<li><a href="index.php">Home</a></li>
