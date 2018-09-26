@@ -16,8 +16,8 @@
 		</header>
 		<br>
 		<div id="main">
-			<div id="jimmyG">
-				<img src="gimmyG.jpg" alt="Garoppolo Hurt">
+			<div id="mainPhoto">
+				<img id="jimmyG" src="gimmyG.jpg" alt="Garoppolo Hurt">
 			</div>
 		</div>
 		<div id="newsFeed">
