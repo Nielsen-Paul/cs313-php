@@ -16,6 +16,7 @@
 		</header>
 		<br>
 		<div id="main">
+			<h1>What Happened This Weekend?</h1>
 			<div id="mainPhoto">
 				<img id="jimmyG" src="gimmyG.jpg" alt="Garoppolo Hurt">
 			</div>
