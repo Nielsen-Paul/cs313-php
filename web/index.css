@@ -27,4 +27,6 @@ li {
     width: 25%;
     background-color: #ffc878;
 	border: 5px solid darkred;
+	float: right;
+	padding: 10px;
 }
