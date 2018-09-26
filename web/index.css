@@ -28,19 +28,15 @@ li {
 
 #newsFeed {
     height: 400px;
-    width: 30%;
     background-color: #ffc878;
 	border: 5px solid darkred;
 	padding: 10px;
-	float: right;
 }
 
 #main {
-	background-color: #ffc878;
 	height: 400px;
-	width: 1000px;
+	background-color: #ffc878;
 	padding: 10px;
-	float: left;
 	text-align: center;
 }
 
