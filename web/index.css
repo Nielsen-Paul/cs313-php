@@ -37,9 +37,15 @@ li {
 	width: 500px;
 	padding: 10px;
 	float: left;
+	text-align: center;
 }
 
 h3 {
 	font: 15px arial, sans-serif;
 	text-align: center;
+}
+
+#jimmyG {
+	width: 100%;
+	height: 300px;
 }
