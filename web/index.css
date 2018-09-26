@@ -18,12 +18,13 @@ li {
     text-align: center;
 }
 
-#navHeader {
+#navBar {
+	min-height: 50 px;
 	text-align: center;
 }
 
 #newsFeed {
-    height: 1000px;
+    height: 400px;
     width: 30%;
     background-color: #ffc878;
 	border: 5px solid darkred;

@@ -8,7 +8,7 @@
 		<header id="ninerHeader">
 			<img  src="49erheader.jpg" alt="49er Header">
 		</header>
-		<header id="navHeader">
+		<header id="navBar">
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="assignments.php">Assignments</a></li>
@@ -27,5 +27,11 @@
 				<br>
 				<a>Marquis Goodwin is back</a>
 		</div>
+		<footer id="navBar">
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="assignments.php">Assignments</a></li>
+			</ul>
+		</footer>
 	</body>
 </html>
