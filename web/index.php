@@ -13,10 +13,10 @@
 		</header>
 		<br>
 		<div id="main">
-			<h1>What Happened This Weekend?</h1>
 			<div id="mainPhoto">
 				<img id="jimmyG" src="gimmyG.jpg" alt="Garoppolo Hurt">
 			</div>
+			<h1>What Happened This Weekend?</h1>
 		</div>
 		<div id="newsFeed">
 			<h3>Latest '9er News</h3>
