@@ -9,10 +9,7 @@
 			<img  src="49erheader.jpg" alt="49er Header">
 		</header>
 		<header id="navBar">
-		<ul>
-			<li><a href="index.php">Home</a></li>
-			<li><a href="assignments.php">Assignments</a></li>
-		</ul>
+		
 		</header>
 		<br>
 		<div id="main">
@@ -28,10 +25,7 @@
 				<a>Marquis Goodwin is back</a>
 		</div>
 		<footer id="navBar">
-			<ul>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="assignments.php">Assignments</a></li>
-			</ul>
+		
 		</footer>
 	</body>
 </html>
