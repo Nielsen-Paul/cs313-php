@@ -21,6 +21,7 @@
 		<div id="newsFeed">
 			<h3>Latest '9er News</h3>
 				<a>Jimmy G will miss the rest of the season with torn ACL</a>
+				<br>
 				<a>Marquis Goodwin is back</a>
 		</div>
 		<br>
