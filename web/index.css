@@ -19,7 +19,7 @@ li {
 }
 
 #navBar {
-	min-height: 50 px;
+	height: 50 px;
 	text-align: center;
 	background-color: darkred;
 	color: white;
