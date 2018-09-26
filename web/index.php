@@ -13,6 +13,7 @@
 </ul>
 </header>
 <br>
+<div id="main"><img src="gimmyG.jpg" alt="Garoppolo Hurt"></div>
 <div id="newsFeed">
 <h3>Latest '9er News</h3>
 <a>Gimmy G will miss the rest of the season with torn ACL</a>
