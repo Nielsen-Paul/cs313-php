@@ -6,11 +6,11 @@
 </head>
 	<body>
 		<header id="ninerHeader">
-			<img  src="49erheader.jpg" alt="49er Header">
-			<div id="navBar">
-				<p>Homepage Assignments Page</p>
-			</div>
+			<img  src="49erheader.jpg" alt="49er Header">	
 		</header>
+		<div id="navBar">
+			<p>Homepage Assignments Page</p>
+		</div>
 		<br>
 		<div id="main">
 			<div id="mainPhoto">
