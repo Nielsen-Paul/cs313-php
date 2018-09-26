@@ -14,7 +14,6 @@
 		<br>
 		<div id="main">
 			<div id="mainPhoto">
-				<img id="jimmyG" src="gimmyG.jpg" alt="Garoppolo Hurt">
 			</div>
 			<h1>What Happened This Weekend?</h1>
 		</div>
