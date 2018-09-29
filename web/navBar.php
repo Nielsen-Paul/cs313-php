@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Homepage</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="navBar.css">
     </head>
 	<body>
         <div id="navBar">
