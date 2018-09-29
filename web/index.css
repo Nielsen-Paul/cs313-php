@@ -10,8 +10,8 @@ body {
 
 #newsFeed {
     height: 400px;
-    background-color: #ffc878;
-	border: 5px solid darkred;
+	background-color: darkred;
+	color: #ffc878;
 	padding: 10px;
 }
 
@@ -29,10 +29,5 @@ h3 {
 
 a:link {
 	text-decoration: none;
-	color: darkred;
-	font-size: 15px;
-}
-
-a:hover {
-	font-size: 20px;
+	color: #ffc878;
 }
