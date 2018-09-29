@@ -22,6 +22,6 @@ a:active {
     color: lightblue;
 }
 
-p.navBarLinks {
-    word-spacing: 30px;
+#homePage {
+    padding: 30 px;
 }
