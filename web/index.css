@@ -9,17 +9,21 @@ body {
 }
 
 #newsFeed {
-    height: 400px;
+	height: 600px;
+	width: 300px;
 	background-color: darkred;
 	color: #ffc878;
 	padding: 10px;
+	float: right;
 }
 
 #main {
 	height: 600px;
+	width: 1000px;
 	background-color: #ffc878;
 	padding: 10px;
 	text-align: center;
+	float: left;
 }
 
 h3 {
