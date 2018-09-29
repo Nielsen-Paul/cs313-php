@@ -21,3 +21,7 @@ a:hover {
 a:active {
     color: lightblue;
 }
+
+span {
+    word-spacing: 30px;
+}
