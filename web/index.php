@@ -8,9 +8,7 @@
 		<header id="ninerHeader">
 			<img  src="49erheader.jpg" alt="49er Header">	
 		</header>
-		<div id="navBar">
-			<p><a href="index.php">Homepage</a><a href="assignments.php">Assignments Page</a></p>
-		</div>
+		<?php include 'navBar.php';?>
 		<br>
 		<div id="main">
 			<div id="mainPhoto">
@@ -24,8 +22,6 @@
 				<br>
 				<p><a href="https://www.49ers.com/video/coming-soon-49ers-at-chargers-in-week-4">Video: 49ers take on the Chargers this Sunday</a></p>
 		</div>
-		<footer id="navBar">
-			<p><a href="index.php">Homepage</a><a href="assignments.php">Assignments Page</a></p>
-		</footer>
+		<?php include 'navBar.php';?>
 	</body>
 </html>
