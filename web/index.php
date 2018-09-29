@@ -20,9 +20,9 @@
 		</div>
 		<div id="newsFeed">
 			<h3>Latest '9er News</h3>
-				<a>Jimmy G will miss the rest of the season with torn ACL</a>
+				<p><a href="http://www.espn.com/video/clip?id=24784670&ex_cid=espnapi_public">Jimmy G will miss the rest of the season with torn ACL</a></p>
 				<br>
-				<a>Marquis Goodwin is back</a>
+				<p><a href="https://www.49ers.com/video/coming-soon-49ers-at-chargers-in-week-4">Video: 49ers take on the Chargers this Sunday</a></p>
 		</div>
 		<footer id="navBar">
 			<p><a href="index.php">Homepage</a><a href="assignments.php">Assignments Page</a></p>
