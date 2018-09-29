@@ -6,7 +6,7 @@
     </head>
 	<body>
         <div id="navBar">
-			<p><a href="index.php" id="homePage">Homepage</a><a href="assignments.php">Assignments Page</a></p>
+			<p><span id="homePage">Homepage><a href="index.php" </a></span><a href="assignments.php">Assignments Page</a></p>
         </div>
     </body>
 </html>
