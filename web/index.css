@@ -35,3 +35,10 @@ a:link {
 	text-decoration: none;
 	color: #ffc878;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	}
