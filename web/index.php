@@ -22,6 +22,8 @@
 				<br>
 				<p><a href="https://www.49ers.com/video/coming-soon-49ers-at-chargers-in-week-4">Video: 49ers take on the Chargers this Sunday</a></p>
 		</div>
-		<?php include 'navBar.php';?>
+		<footer>
+			<?php include 'navBar.php';?>
+		</footer>
 	</body>
 </html>

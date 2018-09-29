@@ -10,7 +10,7 @@ body {
 
 #newsFeed {
 	height: 600px;
-	width: 300px;
+	width: 500px;
 	background-color: darkred;
 	color: #ffc878;
 	padding: 10px;
@@ -19,7 +19,7 @@ body {
 
 #main {
 	height: 600px;
-	width: 600px;
+	width: 1000px;
 	background-color: #ffc878;
 	padding: 10px;
 	text-align: center;
