@@ -4,3 +4,13 @@
 	background-color: darkred;
 	color: white;
 }
+
+a:link {
+	text-decoration: none;
+	color: white;
+	font: 15px;
+}
+
+a:hover {
+	font: 20px;
+}
