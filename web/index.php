@@ -16,6 +16,7 @@
 			<div id="mainPhoto">
 			</div>
 			<h1>What Happened This Weekend?</h1>
+			<img src="jimmyG.jpg" alt="Garoppolo hurt">
 		</div>
 		<div id="newsFeed">
 			<h3>Latest '9er News</h3>
