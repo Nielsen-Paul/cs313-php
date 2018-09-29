@@ -7,7 +7,7 @@
 
 a:link {
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 a:visited {
@@ -22,6 +22,6 @@ a:active {
     color: lightblue;
 }
 
-span {
+p.navBarLinks {
     word-spacing: 30px;
 }
