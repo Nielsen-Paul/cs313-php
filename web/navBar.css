@@ -6,11 +6,18 @@
 }
 
 a:link {
-	text-decoration: none;
 	color: white;
 	font: 15px;
 }
 
+a:visited {
+    color: #ffc878;
+}
+
 a:hover {
 	font: 20px;
+}
+
+a:active {
+    color: lightblue;
 }
