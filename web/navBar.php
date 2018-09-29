@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Homepage</title>
+        <title>Navigation Bar</title>
         <link rel="stylesheet" type="text/css" href="navBar.css">
     </head>
 	<body>

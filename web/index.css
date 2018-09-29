@@ -3,17 +3,6 @@ body {
 	background-color: #ffc878;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	background-color: darkred;
-}
-
-li {
-    display: inline;
-}
-
 #ninerHeader {
 	text-align: center;
 	height: 50px;
