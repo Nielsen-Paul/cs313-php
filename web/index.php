@@ -24,7 +24,7 @@
 				<form action="welcome.php" method="post">
 					Favorite team: <input type="text" name="team"><br>
 					Favorite player: <input type="text" name="player"><br>
-					input type="submit">
+					<input type="submit">
 				</form>
 
 				Your favorite team is: <?php echo $_POST["team"]; ?><br>
