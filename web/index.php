@@ -21,6 +21,14 @@
 				<p><a href="http://www.espn.com/video/clip?id=24784670&ex_cid=espnapi_public">Jimmy G will miss the rest of the season with torn ACL</a></p>
 				<br>
 				<p><a href="https://www.49ers.com/video/coming-soon-49ers-at-chargers-in-week-4">Video: 49ers take on the Chargers this Sunday</a></p>
+				<form action="welcome.php" method="post">
+					Favorite team: <input type="text" name="team"><br>
+					Favorite player: <input type="text" name="player"><br>
+					input type="submit">
+				</form>
+
+				Your favorite team is: <?php echo $_POST["team"]; ?><br>
+				Your favorite player is: <?php echo $_POST["player"]; ?>
 		</div>
 		<div class="footer">
 			<?php include 'navBar.php';?>
