@@ -25,6 +25,7 @@
 					Favorite team: <input type="text" name="team"><br>
 					<br>
 					Favorite player: <input type="text" name="player"><br>
+					<br>
 					<input type="submit">
 				</form>
 		</div>
