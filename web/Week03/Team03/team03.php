@@ -5,8 +5,8 @@
     </head>
     <body>
         <form>
-            <span>Name<input type="text" name="name"></span>
-            <span>Email<input type="text" name="email"></span>
+            <span>Name<input type="text" name="name"></span><br>
+            <span>Email<input type="text" name="email"></span><br>
             <input type="radio" name="majors" value="Computer Science">Computer Science<br>
             <input type="radio" name="majors" value="Web Design and Development">Web Design and Development<br>
             <input type="radio" name="majors" value="Computer Information Technology">Computer Information Technology<br>
