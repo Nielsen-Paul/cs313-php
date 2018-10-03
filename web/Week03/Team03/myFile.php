@@ -8,5 +8,6 @@
         <span>Email <?php echo $_POST["email"]; ?></span><br>
         Major <?php echo $_POST["majors"]; ?><br>
         <?php echo $_POST["comment"]; ?><br>
+        <?php echo $_POST["continents"]; ?><br>
     </body>
 </html>    
