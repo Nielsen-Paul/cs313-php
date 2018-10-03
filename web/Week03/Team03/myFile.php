@@ -4,12 +4,9 @@
         <title>myFile03</title>
     </head>
     <body>
-        <span>Name<?php echo $_POST["name"]; ?></span><br>
-        <span>Email<?php echo $_POST["email"]; ?></span><br>
-        <?php ?>Computer Science<br>
-        <?php ?>Web Design and Development<br>
-        <?php ?>Computer Information Technology<br>
-        <?php ?>Computer Engineering<br>
+        <span>Name <?php echo $_POST["name"]; ?></span><br>
+        <span>Email <?php echo $_POST["email"]; ?></span><br>
+        Major <?php echo $_POST["major"]; ?><br>
         <?php echo $_POST["comment"]; ?><br>
     </body>
 </html>    
