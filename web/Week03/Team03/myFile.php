@@ -10,6 +10,6 @@
         <?php echo $_POST["comment"]; ?><br>
         <?php
             foreach($_POST["continents"] as $continent) {
-                echo $continent; } ?><br>
+                echo $continent . "<br>" ; } ?><br>
     </body>
 </html>    
