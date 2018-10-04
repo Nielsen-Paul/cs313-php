@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Sports Memorabilia</title>
+        <link rel="stylesheet" type="text/css" href="memorabilita.css">
     </head>
     <body>
         <header>
