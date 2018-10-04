@@ -1,0 +1,13 @@
+#item {
+    height: 240px;
+    width: 33%;
+    min-width: 200px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#photo {
+    height: 65%;
+    max-width: 100%;
+}

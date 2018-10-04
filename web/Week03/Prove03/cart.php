@@ -1,3 +1,7 @@
+<?php
+    
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +12,7 @@
         <?php
             foreach($_POST["items"] as $item) {
                 echo $item . "<br>" ; } ?><br>
-        <h3>Would you like to purchase these items now or continue to shop?</h3>
+        <h3>Would you like to purchase these items now or continue shopping?</h3>
         <input type="submit" name="purchase" value="Purchase Order">
         <input type="submit" name="continue" value="Continue Shopping">
     </body>

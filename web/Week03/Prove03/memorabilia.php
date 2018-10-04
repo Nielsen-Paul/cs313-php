@@ -16,41 +16,51 @@
             <form action="cart.php" method="POST">
                 <table>
                     <tr>
-                        <td>
+                        <td id="item">
                             <h3>Michael Jordan Rookie Card</h3>
-                            <img  src="mjRookieCard.jpg" alt="MJ Rookie Card">
+                            <div id="photo">
+                                <img  src="mjRookieCard.jpg" alt="MJ Rookie Card">
+                            </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="mjRookieCard">
+                            <input type="checkbox" name="items[]" value="MJ's Rookie Card">
                             Check the box and click "Submit" to add to your cart
                         </td>
-                        <td>
+                        <td id="item">
                             <h3>Signed Photo of Dwight Clark's "The Catch"</h3>
-                            <img  src="dcTheCatch.jpg" alt="DC The Catch">
+                            <div id="photo">
+                                <img  src="dcTheCatch.jpg" alt="DC The Catch">
+                            </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="dcTheCatch">
+                            <input type="checkbox" name="items[]" value="DC's The Catch Photo">
                             Check the box and click "Submit" to add to your cart
                         </td>
-                        <td>
+                        <td id="item">
                             <h3>Curt Schilling's Bloody Sock</h3>
-                            <img  src="csBloodySock.jpg" alt="CS Bloody Sock">
+                            <div id="photo">
+                                <img  src="csBloodySock.jpg" alt="CS Bloody Sock">
+                            </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="csBloodySock">
+                            <input type="checkbox" name="items[]" value="CS's Bloody Sock">
                             Check the box and click "Submit" to add to your cart
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td id="item">
                             <h3>Barry Bond's Asterisk Ball</h3>
-                            <img  src="bbasteriskball.jpg" alt="BB Asterisk Ball">
+                            <div id="photo">
+                                <img  src="bbasteriskball.jpg" alt="BB Asterisk Ball">
+                            </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="bbasteriskball">
+                            <input type="checkbox" name="items[]" value="BB's Asterisk Ball">
                             Check the box and click "Submit" to add to your cart 
                         </td>
-                        <td>
+                        <td id="item">
                             <h3>Wayne Gretsky Game Worn Jersey</h3>
-                            <img  src="wgJersey.jpg" alt="WG Jersey">
+                            <div id="photo">
+                                <img  src="wgJersey.jpg" alt="WG Jersey">
+                            </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="wgJersey">
+                            <input type="checkbox" name="items[]" value="WG's Jersey">
                             Check the box and click "Submit" to add to your cart 
                         </td>
                     </tr>
