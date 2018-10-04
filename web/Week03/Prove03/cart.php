@@ -1,5 +1,5 @@
 <?php
-    
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
             foreach($_POST["items"] as $item) {
                 echo $item . "<br>" ; } ?><br>
         <h3>Would you like to purchase these items now or continue shopping?</h3>
-        <input type="submit" name="purchase" value="Purchase Order">
-        <input type="submit" name="continue" value="Continue Shopping">
+        <input type="submit" name="purchase" value="Proceed to Checkout" action="checkout.php">
+        <input type="submit" name="continue" value="Continue Shopping" action="memorabilia.php">
     </body>
 </html> 
