@@ -1,3 +1,9 @@
+<?php
+    // Start the session
+    session_start();
+    $_SESSION["items"] = $_POST["items"] 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -67,6 +73,7 @@
                     </tr>
                 </table>
                 <input type="submit" name="submit" value="Submit">
+                <?php $_SESSION["items"] = $_POST["items"] ?>
             </form>    
         </div>
     </body>    
