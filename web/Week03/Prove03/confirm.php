@@ -1,5 +1,6 @@
 <?php
-
+    // Start the session
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -8,6 +9,6 @@
         <title>Confirmation Page</title>
     </head>
     <body>
-        <h2>Your item has been purchase and will be sent to this address: </h2>
+        <h2>Your item has been purchased and will be sent to this address: </h2>
     </body>
 </html>
