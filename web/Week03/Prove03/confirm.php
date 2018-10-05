@@ -1,6 +1,10 @@
 <?php
     // Start the session
     session_start();
+    $address = $_POST["address"];
+    $city = $_POST["city"];
+    $state = $_POST["state"];
+    $zip = $_POST["zip"];
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +19,9 @@
             echo $item . "<br>" ; }
         ?><br>
         <h2>They will be sent to the following address: </h2>
-        
+            <p>
+                <?php echo $address . <br>
+                 $city . ", " . $state . " " . $zip ?>
+            </p>
     </body>
 </html>
