@@ -11,8 +11,9 @@
     <body>
         <h2>Please confirm your order</h2>
         <?php
-        foreach($_POST["items"] as $item) {
-                echo $item . "<br>" ; } ?><br>
+        foreach($_SESSION["items"] as $item) {
+            echo $item . "<br>" ; }
+        ?><br>
         <form action="confirm.php">
         <input type="submit" name="confirm" value="Purchase Order">
         </form>
