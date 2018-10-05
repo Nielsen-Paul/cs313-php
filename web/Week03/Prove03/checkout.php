@@ -14,7 +14,7 @@
         foreach($_SESSION["items"] as $item) {
             echo $item . "<br>" ; }
         ?><br>
-        <form action="confirm.php">
+        <form action="confirm.php" method="post">
             Address: <input type="text" name="address"><br>
             City: <input type="text" name="city">
             State: <input type="text" name="state">
