@@ -28,6 +28,8 @@
                                 <img  src="mjRookieCard.jpg" alt="MJ Rookie Card">
                             </div>
                             <br>
+                            <br>
+                            <br>
                             <input type="checkbox" name="items[]" value="MJ's Rookie Card">
                             Check the box and click "Submit" to add to your cart
                         </td>
@@ -36,6 +38,10 @@
                             <div id="photo">
                                 <img  src="dcTheCatch.jpg" alt="DC The Catch">
                             </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
                             <br>
                             <input type="checkbox" name="items[]" value="DC's The Catch Photo">
                             Check the box and click "Submit" to add to your cart
