@@ -30,6 +30,13 @@ $_SESSION["zip"] = $zip;
         <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
+        <header>
+            <img  src="BaseballLogo.png" alt="Baseball Logo">
+            <img  src="NBALogo.png" alt="NBA Logo">
+            <img  src="NFLLogo.png" alt="NFL Logo">
+            <img  src="NHLLogo.png" alt="NHL Logo">
+        </header>
+        <?php include 'navBar.php';?>
         <h2>The following items have been purchased: </h2>
         <?php
         foreach($_SESSION["items"] as $item) {
@@ -39,5 +46,6 @@ $_SESSION["zip"] = $zip;
             <p>
                 <?php echo nl2br($address . "\n" . $city . ", " . $state . " " . $zip) ?>
             </p>
+        <?php include 'navBar.php';?>    
     </body>
 </html>

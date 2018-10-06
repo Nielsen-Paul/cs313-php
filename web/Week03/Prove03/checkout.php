@@ -10,6 +10,13 @@
         <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
+        <header>
+            <img  src="BaseballLogo.png" alt="Baseball Logo">
+            <img  src="NBALogo.png" alt="NBA Logo">
+            <img  src="NFLLogo.png" alt="NFL Logo">
+            <img  src="NHLLogo.png" alt="NHL Logo">
+        </header>
+        <?php include 'navBar.php';?>        
         <h2>Please confirm your order and enter your address:</h2>
         <?php
         foreach($_SESSION["items"] as $item) {
@@ -77,5 +84,6 @@
         <form action="cart.php">
             <input type="submit" name="return" value="Return to Cart" action="cart.php">
         </form>
+    <?php include 'navBar.php';?>
     </body>
 </html>
