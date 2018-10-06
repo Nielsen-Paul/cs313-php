@@ -2,8 +2,7 @@
     // Start the session
     session_start();
     $_SESSION["items"] = $_POST["items"]; 
-    $_SESSION["totalPrice"] = $_POST["totalPrice"];
-    $totalPrice = $_SESSION["totalPrice"];
+    $totalPrice = $_POST["totalPrice"];
 ?>
 
 <!DOCTYPE html>
