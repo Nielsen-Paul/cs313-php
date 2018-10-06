@@ -3,8 +3,8 @@
     session_start();
     $address = $_POST["address"];
     $city = $_POST["city"];
-    //$state = $_POST["state"];
-    //$zip = $_POST["zip"];
+    $state = $_POST["state"];
+    $zip = $_POST["zip"];
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +20,7 @@
         ?><br>
         <h2>They will be sent to the following address: </h2>
             <p>
-                <?php echo $address . <br> .
-                 $city . ", " //. $state . " " . $zip ?>
+                <?php echo $address . " " . $city . ", " . $state . " " . $zip ?>
             </p>
     </body>
 </html>
