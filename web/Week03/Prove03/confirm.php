@@ -2,7 +2,7 @@
     // Start the session
     session_start();
     $address = $_POST["address"];
-    //$city = $_POST["city"];
+    $city = $_POST["city"];
     //$state = $_POST["state"];
     //$zip = $_POST["zip"];
 ?>
