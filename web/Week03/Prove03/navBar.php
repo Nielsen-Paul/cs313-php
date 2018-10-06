@@ -6,8 +6,8 @@
     </head>
 	<body>
         <div id="navBar">
-            <p><a href="index.php">Homepage</a><span> - </span>
-            <a href="assignments.php">Assignments Page</a><span> - </span>
+            <p><a href="../index.php">Homepage</a><span> - </span>
+            <a href="../assignments.php">Assignments Page</a><span> - </span>
             <a href="memorabilia.php">Memorabilia</a></p>
         </div>
     </body>
