@@ -8,6 +8,7 @@
     <head>
         <title>Sports Memorabilia</title>
         <link rel="stylesheet" type="text/css" href="memorabilia.css">
+        <script type="text/javascript" src="memorabilia.js" onload="onload()"></script>
     </head>
     <body>
         <header>
@@ -30,7 +31,7 @@
                             <br>
                             <br>
                             <br>
-                            <input type="checkbox" name="items[]" value="MJ's Rookie Card $2,000">
+                            <input type="checkbox" name="items[]" onclick="rookieCardCount()" value="MJ's Rookie Card $2,000">
                             Check the box and click "Submit" to add to your cart
                         </td>
                         <td id="item">
@@ -43,7 +44,7 @@
                             <br>
                             <br>
                             <br>
-                            <input type="checkbox" name="items[]" value="DC's The Catch Photo $400">
+                            <input type="checkbox" name="items[]" onclick="theCatchCount()" value="DC's The Catch Photo $400">
                             Check the box and click "Submit" to add to your cart
                         </td>
                         <td id="item">
@@ -52,7 +53,7 @@
                                 <img  src="csBloodySock.jpg" alt="CS Bloody Sock">
                             </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="CS's Bloody Sock $50,000">
+                            <input type="checkbox" name="items[]" onclick="bloodySockCount()" value="CS's Bloody Sock $50,000">
                             Check the box and click "Submit" to add to your cart
                         </td>
                     </tr>
@@ -63,7 +64,7 @@
                                 <img  src="bbasteriskball.jpg" alt="BB Asterisk Ball">
                             </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="BB's Asterisk Ball $1,500,000">
+                            <input type="checkbox" name="items[]" onclick="asteriskBallCount()" value="BB's Asterisk Ball $1,500,000">
                             Check the box and click "Submit" to add to your cart 
                         </td>
                         <td id="item">
@@ -72,11 +73,15 @@
                                 <img  src="wgJersey.jpg" alt="WG Jersey">
                             </div>
                             <br>
-                            <input type="checkbox" name="items[]" value="WG's Jersey $300">
+                            <input type="checkbox" name="items[]" onclick="wornJerseyCount()" value="WG's Jersey $300">
                             Check the box and click "Submit" to add to your cart 
                         </td>
                     </tr>
                 </table>
+                <!-- Total -->
+                <div>
+                    <p id="totalPrice">Total Price: </p>
+                </div>
                 <input type="submit" name="submit" value="Submit">
             </form>    
         </div>
