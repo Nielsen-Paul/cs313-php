@@ -1,3 +1,8 @@
+body {
+    background-color: #ffc878;
+    text-align: center;
+}
+
 #item {
     height: 240px;
     width: 33%;
