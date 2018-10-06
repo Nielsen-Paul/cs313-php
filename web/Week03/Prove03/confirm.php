@@ -20,8 +20,8 @@
         ?><br>
         <h2>They will be sent to the following address: </h2>
             <p>
-                <?php echo $address //. <br>
-                 //$city . ", " . $state . " " . $zip ?>
+                <?php echo $address . " " . <br>
+                 $city . ", " //. $state . " " . $zip ?>
             </p>
     </body>
 </html>
