@@ -7,7 +7,7 @@
 <html>
     <head>
         <title>Sports Memorabilia</title>
-        <link rel="stylesheet" type="text/css" href="memorabilita.css">
+        <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
         <header>
