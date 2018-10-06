@@ -3,6 +3,7 @@
     session_start();
     $_SESSION["items"] = $_POST["items"]; 
     $_SESSION["totalPrice"] = $_POST["totalPrice"];
+    $totalPrice = $_SESSION["totalPrice"];
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@
         <?php
             foreach($_SESSION["items"] as $item) {
                 echo $item . "<br>" ; }
-            echo "Total Price: " . $_SESSION["totalPrice"];    
+            echo "Total Price: " . $totalPrice;    
         ?><br>
         <h3>Would you like to purchase these items now or continue shopping?</h3>
         <form action="checkout.php">
