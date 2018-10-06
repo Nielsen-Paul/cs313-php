@@ -80,7 +80,7 @@
                 </table>
                 <!-- Total -->
                 <div>
-                    <p id="totalPrice">Total Price: </p>
+                    <p id="totalPrice" name="totalPrice">Total Price: </p>
                 </div>
                 <input type="submit" name="submit" value="Submit">
             </form>    
