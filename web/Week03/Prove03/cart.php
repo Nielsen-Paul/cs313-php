@@ -1,6 +1,7 @@
 <?php
     // Start the session
     session_start();
+    $_SESSION["items"] = $_POST["items"] 
 ?>
 
 <!DOCTYPE html>

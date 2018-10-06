@@ -78,7 +78,6 @@
                     </tr>
                 </table>
                 <input type="submit" name="submit" value="Submit">
-                <?php $_SESSION["items"] = $_POST["items"] ?>
             </form>    
         </div>
         <?php include 'navBar.php';?>
