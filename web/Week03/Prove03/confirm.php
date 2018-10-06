@@ -27,6 +27,7 @@ $_SESSION["zip"] = $zip;
 <html>
     <head>
         <title>Confirmation Page</title>
+        <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
         <h2>The following items have been purchased: </h2>

@@ -8,6 +8,7 @@
 <html>
     <head>
         <title>Shopping Cart</title>
+        <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
         <h2>You have selected the following items</h2>

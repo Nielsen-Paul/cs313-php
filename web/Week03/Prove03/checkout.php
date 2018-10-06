@@ -7,6 +7,7 @@
 <html>
     <head>
         <title>Checkout</title>
+        <link rel="stylesheet" type="text/css" href="memorabilia.css">
     </head>
     <body>
         <h2>Please confirm your order and enter your address:</h2>
