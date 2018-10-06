@@ -1,10 +1,26 @@
 <?php
     // Start the session
     session_start();
-    $address = $_POST["address"];
-    $city = $_POST["city"];
-    $state = $_POST["state"];
-    $zip = $_POST["zip"];
+    $address = $city = $state = $zip = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $address = test_input($_POST["address"]);
+  $city = test_input($_POST["city"]);
+  $state = test_input($_POST["state"]);
+  $zip = test_input($_POST["zip"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+$_SESSION["address"] = $address;
+$_SESSION["city"] = $city;
+$_SESSION["state"] = $state;
+$_SESSION["zip"] = $zip;
 ?>
 
 <!DOCTYPE html>
