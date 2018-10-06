@@ -8,7 +8,7 @@
         <?php include 'navBar.php';?>
         <div>
             <h3>Fall 2018 CS313 Assignments</h3>
-            <p>Week03: Coming Soon</p>
+            <p>Week03 <a href="Week03/Prove03/memorabilia.php">Assignments Page</a></p>
             <p>Week04: Coming Soon</p>
             <p>Week05: Coming Soon</p>
             <p>Week06: Coming Soon</p>
