@@ -24,8 +24,8 @@
         ?><br>
         <form action="confirm.php" method="post">
             Address: <input type="text" name="address"><br>
-            City: <input type="text" name="city">
-            State: <select name="state">
+            City: <input type="text" name="city"><br>
+            State: <select name="state"><br>
             <option>AK</option>
             <option>AL</option>
             <option>AZ</option>
@@ -76,7 +76,7 @@
             <option>WV</option>
             <option>WI</option>
             <option>WY</option>
-            </select>
+            </select><br>
             Zip Code: <input type="text" name="zip">
             <br>
             <input type="submit" name="confirm" value="Purchase Order">
