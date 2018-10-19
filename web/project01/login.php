@@ -7,14 +7,15 @@
 
     <!-- Page title -->
     <title>Duty to God Login</title>
+    <link rel="stylesheet" type="text/css" href="memorabilia.css">
 </head>
 <body>
-
+    <?php include 'navBar.php';?>
 	    <div id="login">
 	        <h1>Please Log In</h1>
-            <span>Username<input type="text" value="username"></span>
-            <span>Password<input type="text" value="password"></span>
+            <span>Username<input type="text" value="username"></span><br>
+            <span>Password<input type="text" value="password"></span><br>
         </div>
-
+    <?php include 'navBar.php';?>
 </body>
 </html>

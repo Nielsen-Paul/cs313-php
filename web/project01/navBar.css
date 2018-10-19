@@ -1,0 +1,27 @@
+#navBar {
+	height: 40px;
+	text-align: center;
+	background-color: darkred;
+	color: white;
+}
+
+a:link {
+	color: white;
+	font-size: 25px;
+}
+
+a:visited {
+    color: #ffc878;
+}
+
+a:hover {
+	font-size: 35px;
+}
+
+a:active {
+    color: lightblue;
+}
+
+#homePage {
+    padding: 30 px;
+}
