@@ -11,11 +11,13 @@
 </head>
 <body>
     <?php include 'navBar.php';?>
-	    <div id="login">
-	        <h1>Please Log In</h1>
-            <span>Username<input type="text" value="username"></span><br>
-            <span>Password<input type="text" value="password"></span><br>
-        </div>
-    <?php include 'navBar.php';?>
+	<div id="login">
+	    <h1>Please Log In</h1>
+        <span>Username<input type="text" value="username"></span><br>
+        <span>Password<input type="text" value="password"></span><br>
+    </div>  
+    <div class="footer">
+		<?php include 'navBar.php';?>
+	</div>
 </body>
 </html>
