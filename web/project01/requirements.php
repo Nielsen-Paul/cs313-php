@@ -6,10 +6,11 @@
     <meta charset="utf-8" />
 
     <!-- Page title -->
-    <title>Scripture Resources</title>
+    <title>Requirements</title>
+		<link rel="stylesheet" type="text/css" href="memorabilia.css">
 </head>
 <body>
-	<h1>Scripture Resources</h1>
+	<h1>Duty to God Requirements</h1>
 	<?php
 		try
 		{
@@ -33,11 +34,11 @@
 		  die();
 		}
 
-		$statement = $db->query('SELECT book, chapter, verse, content FROM scriptures');
+		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');
 		while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 		{
-		  echo '<strong>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</strong>';
-		  echo ' - "' . $row['content'] . '"<br/>'; 
+		  echo '<strong>' . $row['name'] . '</strong>' . $row['learn'] . ' ' . $row['act'] . ''  . $row['share'] . '' . $row['comment'] . '';
+		  echo ' ' . $row['content'] . '"<br/>'; 
 		}
 
 	?>
