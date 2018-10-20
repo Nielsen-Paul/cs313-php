@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="memorabilia.css">
 </head>
 <body>
+	<?php include 'navBar.php';?>
 	<h1>Duty to God Requirements</h1>
 	<?php
 		try
@@ -42,5 +43,6 @@
 		}
 
 	?>
+	<?php include 'navBar.php';?>
 </body>
 </html>
