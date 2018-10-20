@@ -43,6 +43,7 @@
 			<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />
 			<label> Comment - </label><input id="comment" type="text" name="comment" value=" " /><?php echo($row['comment']); ?><br>
 			<label> Journal - </label><input id="journal" type="text" name="journal" value=" " /><?php echo($row['journal']); ?><br>
+			<br>
 		<?php endwhile; ?>
 	<div class="footer">
 		<?php include 'navBar.php';?>
