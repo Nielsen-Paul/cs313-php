@@ -38,9 +38,11 @@
 		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
 		<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
 			<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
-			<input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />;
-			<input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />;
-			<input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />;
+			<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />;
+			<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />;
+			<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />;
+			<label> Comment - </label><input type="text" name="comment" value="<?php echo($row['comment']); ?>" /><br>
+			<label> Journal - </label><input type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
 
 			<!--echo '<input type="checkbox" name="learn" value="$row['learn']">' . ' ' .
 			echo '<input type="checkbox" name="act" value="$row['act']">' . ''  . 
