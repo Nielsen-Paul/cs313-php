@@ -45,6 +45,7 @@
 			<label> Journal - </label><input id="journal" type="text" name="journal" value=" " /><?php echo($row['journal']); ?><br>
 			<br>
 		<?php endwhile; ?>
+	<br>
 	<div class="footer">
 		<?php include 'navBar.php';?>
 	</div>

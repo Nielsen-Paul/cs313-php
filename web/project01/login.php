@@ -13,8 +13,8 @@
     <?php include 'navBar.php';?>
 	<div id="login">
 	    <h1>Please Log In</h1>
-        <span>Username<input type="text" value="username"></span><br>
-        <span>Password<input type="text" value="password"></span><br>
+        <span>Username<input type="text" value=""></span><br>
+        <span>Password<input type="text" value=""></span><br>
     </div>  
     <div class="footer">
 		<?php include 'navBar.php';?>
