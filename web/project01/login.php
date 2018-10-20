@@ -7,7 +7,7 @@
 
     <!-- Page title -->
     <title>Duty to God Login</title>
-    <link rel="stylesheet" type="text/css" href="project01.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
     <?php include 'navBar.php';?>
