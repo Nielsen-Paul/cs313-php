@@ -14,9 +14,9 @@
 	<div id="login">
 	    <h1>Please Log In</h1>
         <form action="requirements.php" method="get">
-            <span>Username<input type="text" value=""></span><br>
-            <span>Password<input type="text" value=""></span><br>
-            <button type="submit" value="Submit">Submit</button>
+            <span>Username<input type="text" name="username" value=""></span><br>
+            <span>Password<input type="text" name="password" value=""></span><br>
+            <button type="button">Submit</button>
         </form>
     </div>  
     <div class="footer">
