@@ -16,7 +16,7 @@
         <form action="requirements.php" method="get">
             <span>Username<input type="text" name="username" value=""></span><br>
             <span>Password<input type="text" name="password" value=""></span><br>
-            <button type="button">Submit</button>
+            <input type="submit">
         </form>
     </div>  
     <div class="footer">
