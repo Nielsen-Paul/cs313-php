@@ -41,7 +41,7 @@
 
 		$statement = $db->query('SELECT name FROM youth');?>
 		<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
-			<?php echo '<strong>' . $row['name'] . '</strong>'; ?><a href="requirements.php">See his requirements</a>
+			<a href="requirements.php"><?php echo '<strong>' . $row['name'] . '</strong>'; ?></a>
 			<br>
 		<?php endwhile; ?>
 	<br>
