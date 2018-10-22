@@ -48,7 +48,6 @@
 				<label> Comment - </label><input id="comment" type="text" name="comment" value=" " /><?php echo($row['comment']); ?><br>
 				<label> Journal - </label><input id="journal" type="text" name="journal" value=" " /><br>
 				<?php echo($row['journal']); ?><br>
-				<br>
 			<?php endwhile; ?>
 			<input type="submit">
 			<br>
