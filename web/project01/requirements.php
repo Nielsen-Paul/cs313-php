@@ -51,6 +51,7 @@
 				<br>
 			<?php endwhile; ?>
 			<input type="submit">
+			<br>
 		</form>
 	<br>
 	<div class="footer">
