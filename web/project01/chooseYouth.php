@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
 
     <!-- Page title -->
-    <title>Requirements</title>
+    <title>Choose a Youth</title>
 		<link rel="stylesheet" type="text/css" href="project01.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
 
 		$statement = $db->query('SELECT name FROM youth');?>
 		<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
-			<?php echo '<strong>' . $row['name'] . '</strong>'; ?>
+			<?php echo '<strong>' . $row['name'] . '</strong>'; ?><a href="requirements.php">See his requirements</a>
 			<br>
 		<?php endwhile; ?>
 	<br>
