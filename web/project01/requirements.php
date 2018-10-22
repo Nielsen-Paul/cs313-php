@@ -50,7 +50,7 @@
 				<?php echo($row['journal']); ?><br>
 				<br>
 			<?php endwhile; ?>
-			<input type="submit" />
+			<input type="submit">
 		</form>
 	<br>
 	<div class="footer">
