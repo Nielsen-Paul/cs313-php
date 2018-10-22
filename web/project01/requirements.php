@@ -38,8 +38,8 @@
 		  echo 'Error!: ' . $ex->getMessage();
 		  die();
 		}
+		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
 		<form action="received" method="get">
-			$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
 			<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
 				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
