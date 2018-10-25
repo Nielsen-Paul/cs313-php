@@ -39,9 +39,9 @@
 		  die();
 		}
 
-		$statement = $db->query('SELECT name, id FROM youth');?>
+		$statement = $db->query('SELECT name FROM youth');?>
 		<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
-			<?php echo "<p><a href='requirements.php?youth_id=$id['id']'>$row['name']</a></p>"; ?>
+			<p><a id="youth" href="requirements.php"><?php echo '<strong>' . $row['name'] . '</strong>'; ?></a></p>
 			<br>
 		<?php endwhile; ?>
 	<br>
