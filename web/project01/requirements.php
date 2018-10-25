@@ -1,5 +1,7 @@
 <?php include 'db.php';
 
+	$youth_id = $_GET['id'];
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// Insert into db
 	
@@ -30,7 +32,7 @@
 </head>
 <body>
 	<?php include 'navBar.php';?>
-	<h1>Duty to God Requirements</h1>
+	<h1>Duty to God Requirements for <?php echo $youth_id ?> </h1>
 	<?php
 		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
 		<form action="requirements.php" method="POST">
