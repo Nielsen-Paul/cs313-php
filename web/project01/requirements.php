@@ -1,5 +1,20 @@
 <?php 
-	$username = $_POST["username"];
+
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		// Insert into db
+	
+		$query = 'INSERT INTO requirements (name, learn, act, share, comments, journal) VALUES (:name, :learn, :act, :share, :comments, :journal)';
+		$stmt = $db->prepare($query);
+		$pdo = $stmt->execute(array(':name' => $_POST['name'], ':learn' => $_POST['learn'], ':act' => $_POST['act'], ':share' => $_POST['share'], ':comments' => $_POST['comments'], ':journal' => $_POST['journal']));
+	
+		$newId = $db->lastInsertId('requirements_id_seq');
+	
+		/*foreach ($_POST['topics'] as $topic) {
+			$query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
+			$stmt = $db->prepare($query);
+			$stmt->execute(array(':scripture' => $newId, ':topic' => $topic));
+		}*/
+	}
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +54,7 @@
 		  die();
 		}
 		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
-		<form action="received.php" method="get">
+		<form action="requirements.php" method="POST">
 			<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
 				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
