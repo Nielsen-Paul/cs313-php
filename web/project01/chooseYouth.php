@@ -39,7 +39,7 @@
 		  die();
 		}
 
-		$statement = $db->query('SELECT name FROM youth');?>
+		$statement = $db->query('SELECT name, id FROM youth');?>
 		<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
 			<?php echo "<a href='requirements.php?id=$row['id']'>$row['name'];" ?>
 			<br>
