@@ -2,6 +2,12 @@
 
 	$youth_id = $_GET['id'];
 
+	$stmt = $db->prepare('SELECT name FROM youth WHERE id=:id');
+	$stmt->bindValue(':id', $youth_id, PDO::PARAM_INT);
+	$stmt->execute();
+	$youth_name = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// Insert into db
 	
@@ -32,7 +38,8 @@
 </head>
 <body>
 	<?php include 'navBar.php';?>
-	<h1>Duty to God Requirements for <?php echo $youth_id ?> </h1>
+	<h1>Duty to God Requirements for 
+		<?php echo $youth_name ?> </h1>
 	<?php
 		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
 		<form action="requirements.php" method="POST">
