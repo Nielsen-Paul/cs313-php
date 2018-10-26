@@ -48,7 +48,7 @@
 			<?php
 			$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
 			$statement->execute(':youth_id' => $youth_id);
-			while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
+			while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)): ?>
 				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
 				<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />
