@@ -36,15 +36,15 @@
 </head>
 <body>
 	<?php include 'navBar.php';?>
-	<h1>Duty to God Requirements for <?php echo $youth_name ?> </h1>
-
+	<h1>Duty to God Requirements for 
+		<?php echo $youth_name ?> </h1>
+	<?php
+		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+		$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);	
+	?>
 		<form action="requirements.php" method="POST">
-			<?php 
-			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
-			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
-			$statement->execute();
-			while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)): ?>
-				<?php echo ($row['name'] . ' - '); ?>
+			<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
+				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
 				<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />
 				<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />
