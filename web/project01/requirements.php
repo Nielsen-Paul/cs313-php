@@ -46,12 +46,12 @@
 	
 		<form action="requirements.php" method="POST">
 			<?php
-			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+			$statement = $db->prepare('SELECT name, learning, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
 			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$statement->execute();
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
 				echo '<strong>' . $row['name'] . ' - </strong>'; ?>
-				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
+				<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learning']==1 ? 'checked' : '');?> />
 				<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />
 				<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />
 				<label> Comment - </label><input id="comment" type="text" name="comment" value=" " /><?php echo($row['comment']); ?><br>
