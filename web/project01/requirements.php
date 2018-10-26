@@ -2,6 +2,7 @@
 
 	$youth_id = $_GET['id'];
 
+	//get youth's name based on id
 	$stmt = $db->prepare('SELECT name FROM youth WHERE id=:id');
 	$stmt->bindValue(':id', $youth_id, PDO::PARAM_INT);
 	$stmt->execute();
@@ -14,15 +15,11 @@
 	
 		$query = 'INSERT INTO requirements (name, learn, act, share, comments, journal) VALUES (:name, :learn, :act, :share, :comments, :journal)';
 		$stmt = $db->prepare($query);
-		$pdo = $stmt->execute(array(':name' => $_POST['name'], ':learn' => $_POST['learn'], ':act' => $_POST['act'], ':share' => $_POST['share'], ':comments' => $_POST['comments'], ':journal' => $_POST['journal']));
+		$pdo = $stmt->execute(array(':name' => $_POST['name'], ':learn' => $_POST['learn'], ':act' => $_POST['act'], 
+			':share' => $_POST['share'], ':comments' => $_POST['comments'], ':journal' => $_POST['journal']));
 	
 		$newId = $db->lastInsertId('requirements_id_seq');
-	
-		/*foreach ($_POST['topics'] as $topic) {
-			$query = 'INSERT INTO scripture_topic (scriptures_id, topic_id) VALUES (:scripture, :topic)';
-			$stmt = $db->prepare($query);
-			$stmt->execute(array(':scripture' => $newId, ':topic' => $topic));
-		}*/
+
 	}
 ?>
 
@@ -42,7 +39,10 @@
 	<h1>Duty to God Requirements for 
 		<?php echo $youth_name ?> </h1>
 	<?php
-		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements');?>
+		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+		$stmt->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
+		$stmt->execute();
+	?>
 		<form action="requirements.php" method="POST">
 			<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
 				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
