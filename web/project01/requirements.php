@@ -54,8 +54,8 @@
 				<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
 				<label> Act - </label><input type="checkbox" name="act" value="yes" <?php echo ($row['act']==1 ? 'checked' : '');?> />
 				<label> Share - </label><input type="checkbox" name="share" value="yes" <?php echo ($row['share']==1 ? 'checked' : '');?> />
-				<label> Comment - </label><input id="comment" type="text" name="comment" value=" " /><?php echo($row['comment']); ?><br>
-				<label> Journal - </label><input id="journal" type="text" name="journal" value=" " /><br>
+				<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
+				<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
 				<?php echo($row['journal']); ?><br>
 			<?php endwhile; ?>
 			<input type="submit">
