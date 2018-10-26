@@ -44,7 +44,7 @@
 			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$statement->execute();
 			while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)): ?>
-				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
+				<?php echo ($row['name'] . ' - '); ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
 				<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" />
 				<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" />
