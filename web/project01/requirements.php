@@ -40,7 +40,8 @@
 		<?php echo $youth_name ?> </h1>
 	<?php
 		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
-		$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);	
+		$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
+		$statement->execute();	
 	?>
 		<form action="requirements.php" method="POST">
 			<?php while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
