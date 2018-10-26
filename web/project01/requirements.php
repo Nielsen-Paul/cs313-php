@@ -5,7 +5,7 @@
 	$stmt = $db->prepare('SELECT name FROM youth WHERE id=:id');
 	$stmt->bindValue(':id', $youth_id, PDO::PARAM_INT);
 	$stmt->execute();
-	$youth_name = $stmt->fetch(PDO::FETCH_ASSOC);
+	$youth_name = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
