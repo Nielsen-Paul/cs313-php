@@ -46,9 +46,9 @@
 	
 		<form action="requirements.php" method="POST">
 			<?php
-			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
-			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
-			$statement->execute();
+			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements');
+			//$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
+			//$statement->execute();
 			while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)):
 				echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 				<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" />
