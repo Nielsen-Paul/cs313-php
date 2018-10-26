@@ -39,7 +39,7 @@
 	<h1>Duty to God Requirements for 
 		<?php echo $youth_name ?> </h1>
 	<?php
-		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+		$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=1');
 		$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 		$statement->execute();
 	?>
