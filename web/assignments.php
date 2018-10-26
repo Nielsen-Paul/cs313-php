@@ -9,9 +9,9 @@
         <div>
             <h3>Fall 2018 CS313 Assignments</h3>
             <p>Week03 <a href="Week03/Prove03/memorabilia.php">Sports Memorabilia</a></p>
-            <p>Week04: <a href="project01/login.php">Project 01</a></p>
-            <p>Week05: <a href="project01/login.php">Project 01</a></p>
-            <p>Week06: <a href="project01/login.php">Project 01</a></p>
+            <p>Week04: <a href="project01/chooseYouth.php">Project 01</a></p>
+            <p>Week05: <a href="project01/chooseYouth.php">Project 01</a></p>
+            <p>Week06: <a href="project01/chooseYouth.php">Project 01</a></p>
             <p>Week07: Coming Soon</p>
             <p>Week08: Coming Soon</p>
             <p>Week09: Coming Soon</p>
