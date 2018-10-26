@@ -41,6 +41,7 @@
 		<form action="requirements.php" method="POST">
 			<?php 
 			$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+			$stmt->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$stmt->execute();
 			while ($row = $statement->fetchAll(PDO::FETCH_ASSOC)): ?>
 				<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
