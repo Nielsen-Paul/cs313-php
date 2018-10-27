@@ -2,7 +2,7 @@
 
 $youth_id = $_POST['youth_id'];
 $name = $_POST['name'];
-$learn = $_POST['learn'];;
+$learn = $_POST['learn'];
 $act = $_POST['act'];
 $share = $_POST['share'];
 $comments = $_POST['comments'];
