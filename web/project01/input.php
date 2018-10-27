@@ -1,12 +1,12 @@
 <?php include 'db.php';
 
-$youth_id = htmlspecialchars($_POST['youth_id']);
-$name = htmlspecialchars($_POST['name']);
-$learn = htmlspecialchars($_POST['learn']);
-$act = htmlspecialchars($_POST['act']);
-$share = htmlspecialchars($_POST['share']);
-$comments = htmlspecialchars($_POST['comments']);
-$journal = htmlspecialchars($_POST['journal']);
+$youth_id = $_POST['youth_id'];
+$name = $_POST['name'];
+$learn = $_POST['learn'];;
+$act = $_POST['act'];
+$share = $_POST['share'];
+$comments = $_POST['comments'];
+$journal = $_POST['journal'];
 
 $stmt = $db->prepare('UPDATE requirements SET name=:name, learn=:learn, act=:act, share=:share, comments=:comments, journal=:journal WHERE youth_id=:youth_id AND name=:name;');
 $stmt->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
