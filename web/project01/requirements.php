@@ -44,23 +44,23 @@
 	<h1>Duty to God Requirements for 
 		<?php echo $youth_name ?> </h1>
 	
-		<form action="requirements.php" method="POST">
+		
 			<?php
 			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
 			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$statement->execute();
-			while ($row = $statement->fetch(PDO::FETCH_ASSOC)):
-				echo '<strong>' . $row['name'] . ' - </strong>'; ?>
-				<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
-				<label> Act - </label><input type="checkbox" name="act" value="yes" <?php echo ($row['act']==1 ? 'checked' : '');?> />
-				<label> Share - </label><input type="checkbox" name="share" value="yes" <?php echo ($row['share']==1 ? 'checked' : '');?> />
-				<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
-				<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
-				<?php echo($row['journal']); ?><br>
+			while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
+				<form action="requirements.php" method="POST">
+					<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
+					<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
+					<label> Act - </label><input type="checkbox" name="act" value="yes" <?php echo ($row['act']==1 ? 'checked' : '');?> />
+					<label> Share - </label><input type="checkbox" name="share" value="yes" <?php echo ($row['share']==1 ? 'checked' : '');?> />
+					<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
+					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
+					<?php echo($row['journal']); ?><br>
+					<input type="submit">
+				</form>
 			<?php endwhile; ?>
-			<input type="submit">
-			<br>
-		</form>
 	<br>
 	<div class="footer">
 		<?php include 'navBar.php';?>
