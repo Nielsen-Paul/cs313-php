@@ -50,7 +50,9 @@
 			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$statement->execute();
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
-				<form action="requirements.php" method="POST">
+				<form action="input.php" method="POST">
+					<input type="hidden" name="youth_id" value="<?php echo $youth_id; ?>" />
+					<input type="hidden" name="name" value="<?php echo($row['name']); ?>" />
 					<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
 					<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
 					<label> Act - </label><input type="checkbox" name="act" value="yes" <?php echo ($row['act']==1 ? 'checked' : '');?> />
