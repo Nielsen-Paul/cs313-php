@@ -54,9 +54,9 @@
 					<input type="hidden" name="youth_id" value="<?php echo $youth_id; ?>" />
 					<input type="hidden" name="name" value="<?php echo($row['name']); ?>" />
 					<?php echo '<strong>' . $row['name'] . ' - </strong>'; ?>
-					<label> Learn - </label><input type="checkbox" name="learn" value="<?php echo($row['learn']); ?>" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
-					<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" <?php echo ($row['act']==1 ? 'checked' : '');?> />
-					<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" <?php echo ($row['share']==1 ? 'checked' : '');?> />
+					<label> Learn - </label><input type="checkbox" name="learn" value="yes" <?php echo ($row['learn']==1 ? 'checked' : '');?> />
+					<label> Act - </label><input type="checkbox" name="act" value="yes" <?php echo ($row['act']==1 ? 'checked' : '');?> />
+					<label> Share - </label><input type="checkbox" name="share" value="yes" <?php echo ($row['share']==1 ? 'checked' : '');?> />
 					<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
 					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
 					<?php echo($row['journal']); ?><br>
