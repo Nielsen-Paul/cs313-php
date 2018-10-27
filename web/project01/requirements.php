@@ -58,8 +58,8 @@
 					<label> Act - </label><input type="checkbox" name="act" value="<?php echo($row['act']); ?>" <?php echo ($row['act']==1 ? 'checked' : '');?> />
 					<label> Share - </label><input type="checkbox" name="share" value="<?php echo($row['share']); ?>" <?php echo ($row['share']==1 ? 'checked' : '');?> />
 					<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
-					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
-					<?php echo($row['journal']); ?>
+					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" />
+					<?php echo($row['journal']); ?><br>
 					<input type="submit">
 				</form>
 				<br>
