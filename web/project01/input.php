@@ -18,6 +18,7 @@ $stmt->bindValue(':act', $act, PDO::PARAM_INT);
 $stmt->bindValue(':share', $share, PDO::PARAM_INT);
 $stmt->bindValue(':comments', $comments, PDO::PARAM_STR);
 $stmt->bindValue(':journal', $journal, PDO::PARAM_STR);
+$stmt->execute();
 
 $new_page = "requirements.php?id=$youth_id";
 
