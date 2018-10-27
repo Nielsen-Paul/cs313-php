@@ -20,6 +20,8 @@ $stmt->bindValue(':comments', $comments, PDO::PARAM_STR);
 $stmt->bindValue(':journal', $journal, PDO::PARAM_STR);
 
 $new_page = "requirements.php?id=$youth_id";
+
+header("Location: $new_page");
 die();
 
 ?>
