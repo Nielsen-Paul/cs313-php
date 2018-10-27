@@ -57,9 +57,10 @@
 					<label> Share - </label><input type="checkbox" name="share" value="yes" <?php echo ($row['share']==1 ? 'checked' : '');?> />
 					<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
 					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
-					<?php echo($row['journal']); ?><br>
+					<?php echo($row['journal']); ?>
 					<input type="submit">
 				</form>
+				<br>
 			<?php endwhile; ?>
 	<br>
 	<div class="footer">
