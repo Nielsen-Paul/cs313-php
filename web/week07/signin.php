@@ -13,7 +13,7 @@
         <div id="signup"><a href="signup.php">Create an account</a></div>
         <div id="login">
 	        <h1>Please sign in</h1>
-            <form action="requirements.php" method="get">
+            <form action="welcome.php" method="get">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="text" name="password" value=""></span><br>
                 <input type="submit">
