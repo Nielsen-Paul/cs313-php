@@ -1,6 +1,7 @@
 <?php include 'db.php';
 
-$stmt = $db->prepare('INSERT INTO user (name, password) VALUES (:name, :password)';
+$query = 'INSERT INTO user (name, password) VALUES (:name, :password)';
+$stmt = $db->prepare($query);
 $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $_POST['password']));
 $stmt->execute();
 
