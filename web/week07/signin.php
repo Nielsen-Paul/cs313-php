@@ -15,7 +15,7 @@
 	        <h1>Please sign in</h1>
             <form action="welcome.php" method="get">
                 <span>Username<input type="text" name="username" value=""></span><br>
-                <span>Password<input type="text" name="password" value=""></span><br>
+                <span>Password<input type="password" name="password" value=""></span><br>
                 <input type="submit">
             </form>
         </div>
