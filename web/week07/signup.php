@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="login">
-	        <h1>Create a Log In</h1>
+	        <h1>Create an Account</h1>
             <form action="requirements.php" method="get">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="text" name="password" value=""></span><br>

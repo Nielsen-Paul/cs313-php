@@ -3,3 +3,8 @@ body {
     font-size: 20px;
     text-align: center;
 }
+
+#signup {
+	text-align: right;
+	padding: 10px;
+}
