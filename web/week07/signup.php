@@ -12,8 +12,8 @@
     <body>
         <div id="login">
 	        <h1>Create an Account</h1>
-            <form action="signin.php" method="get">
-                <span>Username<input type="text" name="username" value=""></span><br>
+            <form action="input.php" method="get">
+                <span>Username<input type="text" name="name" value=""></span><br>
                 <span>Password<input type="text" name="password" value=""></span><br>
                 <input type="submit">
             </form>

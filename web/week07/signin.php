@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
 
         <!-- Page title -->
-        <title>Database Signup</title>
+        <title>Database Sign In</title>
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
