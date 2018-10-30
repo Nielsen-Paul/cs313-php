@@ -12,7 +12,7 @@
     <body>
         <div id="login">
 	        <h1>Create an Account</h1>
-            <form action="input.php" method="get">
+            <form action="input.php" method="POST">
                 <span>Username<input type="text" name="name" value=""></span><br>
                 <span>Password<input type="password" name="password" value=""></span><br>
                 <input type="submit">
