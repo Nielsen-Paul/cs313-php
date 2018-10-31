@@ -1,11 +1,23 @@
 <?php include 'db.php';
 
+session_start();
+$error = '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = 'INSERT INTO public."user" (name, password) VALUES (:name, :password)';
+    $query = 'SELECT name, password FROM public.user WHERE name=:name';
     $stmt = $db->prepare($query);
-    $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $_POST['password']));
+    $pdo = $stmt->execute(array(':name' => $_POST['name']));
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+    $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
+    if ($loggedIn) {
+        $_SESSION['user'] = $_POST['name'];
+        $newURL = "./welcom.php";
+        header('Location: ' . $newURL);
+    } else {
+        $error = 'Incorrect username or password';
+    }
 }
 
 ?>
@@ -24,11 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="signup"><a href="signup.php">Create an account</a></div>
         <div id="login">
 	        <h1>Please sign in</h1>
-            <form action="welcome.php" method="get">
+            <form action="signin.php" method="POST">
                 <span>Username<input type="text" name="username" value=""></span><br>
                 <span>Password<input type="password" name="password" value=""></span><br>
                 <input type="submit">
             </form>
+            <?php echo $error; ?>
         </div>
     </body>
 </html>
