@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
+        <?php include 'navBar.php';?>
         <div id="login">
 	        <h1>Create an Account</h1>
             <p><?php echo $error; ?></p>
@@ -48,5 +49,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit">
             </form>
         </div>
+        <div class="footer">
+		<?php include 'navBar.php';?>
+	    </div>
     </body>
 </html>
