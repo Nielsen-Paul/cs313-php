@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit">
             </form>
             <?php echo $error; ?>
-            <div id="signup"><a href="signup.php">Create an account</a></div>
+            <div id="youth"><a href="signup.php">Create an account</a></div>
         </div>
         <div class="footer">
 		<?php include 'navBar.php';?>
