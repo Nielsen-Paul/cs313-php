@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['user'] = $_POST['username'];
         $newURL = "./welcome.php";
         header('Location: ' . $newURL);
+        die();
     } else {
         $error = 'Incorrect username or password';
     }

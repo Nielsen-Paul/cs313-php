@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    $user = $_SESSION['user'];
+
+    if($user == NULL) {
+        $newURL = "./signin.php";
+        header('Location: ' . $newURL);
+        die();
+    }
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +22,6 @@
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
-        <h1>Welcome <?php $username ?></h1>
+        <h1>Welcome <?php $user ?></h1>
     </body>
 </html>

@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $newURL = "./signin.php";
     header('Location: ' . $newURL);
+    die();
 }
 
 ?>
