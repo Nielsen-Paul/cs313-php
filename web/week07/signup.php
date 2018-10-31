@@ -43,8 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p><?php echo $error; ?></p>
             <form action="signup.php" method="POST">
                 <span>Username<input type="text" name="name" value=""></span><br>
-                <span>Password<input type="password" name="password" value=""></span><?php ($error == '') ? '' : '*';  ?><br>
-                <span>Retype Password <input type="password" name="password2" value=""></span><?php ($error == '') ? '' : '*';  ?><br>
+                <span>Password<input type="password" name="password" value=""></span><?php echo ($error == '') ? '' : '*';  ?><br>
+                <span>Retype Password <input type="password" name="password2" value=""></span><?php echo ($error == '') ? '' : '*';  ?><br>
                 <input type="submit">
             </form>
         </div>
