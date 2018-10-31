@@ -1,15 +1,27 @@
 <?php include 'db.php';
 
+$error = '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $hashpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $query = 'INSERT INTO public."user" (name, password) VALUES (:name, :password)';
-    $stmt = $db->prepare($query);
-    $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $hashpassword));
+    $password = $_POST['password'];
+    $password2 = $_POST['password2'];
 
-    $newURL = "./signin.php";
-    header('Location: ' . $newURL);
-    die();
+    if ($password == $password2) {
+
+        $hashpassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
+        $query = 'INSERT INTO public."user" (name, password) VALUES (:name, :password)';
+        $stmt = $db->prepare($query);
+        $pdo = $stmt->execute(array(':name' => $_POST['name'], ':password' => $hashpassword));
+    
+        $newURL = "./signin.php";
+        header('Location: ' . $newURL);
+        die();
+
+    } else {
+        $error = 'Passwords must match';
+    }
+
 }
 
 ?>
@@ -28,9 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <body>
         <div id="login">
 	        <h1>Create an Account</h1>
+            <p><?php echo $error; ?></p>
             <form action="signup.php" method="POST">
                 <span>Username<input type="text" name="name" value=""></span><br>
-                <span>Password<input type="password" name="password" value=""></span><br>
+                <span>Password<input type="password" name="password" value=""></span><?php ($error == '') ? '' : '*';  ?><br>
+                <span>Retype Password <input type="password" name="password2" value=""></span><?php ($error == '') ? '' : '*';  ?><br>
                 <input type="submit">
             </form>
         </div>
