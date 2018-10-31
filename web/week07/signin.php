@@ -7,12 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $query = 'SELECT name, password FROM public.user WHERE name=:name';
     $stmt = $db->prepare($query);
-    $pdo = $stmt->execute(array(':name' => $_POST['name']));
+    $pdo = $stmt->execute(array(':name' => $_POST['username']));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
     if ($loggedIn) {
-        $_SESSION['user'] = $_POST['name'];
+        $_SESSION['user'] = $_POST['username'];
         $newURL = "./welcome.php";
         header('Location: ' . $newURL);
     } else {
