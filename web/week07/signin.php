@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $loggedIn = password_verify($_POST['password'], $rows[0]['password']);
     if ($loggedIn) {
         $_SESSION['user'] = $_POST['name'];
-        $newURL = "./welcom.php";
+        $newURL = "./welcome.php";
         header('Location: ' . $newURL);
     } else {
         $error = 'Incorrect username or password';
