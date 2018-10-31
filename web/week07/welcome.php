@@ -22,6 +22,6 @@
         <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
-        <h1>Welcome <?php $user ?></h1>
+        <h1>Welcome <?php echo $user; ?></h1>
     </body>
 </html>
