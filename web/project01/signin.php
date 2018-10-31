@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <!-- Page title -->
         <title>Duty to God Sign In</title>
-        <link rel="stylesheet" type="text/css" href="login.css">
+        <link rel="stylesheet" type="text/css" href="project01.css">
     </head>
     <body>
         <?php include 'navBar.php';?>
