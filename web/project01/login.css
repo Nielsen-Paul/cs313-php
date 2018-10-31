@@ -12,6 +12,6 @@ body {
 }
 
 #signup {
-	text-align: right;
 	padding: 10px;
+	color: darkred;
 }
