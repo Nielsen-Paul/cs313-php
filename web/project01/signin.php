@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <!-- Page title -->
         <title>Duty to God Sign In</title>
-        <link rel="stylesheet" type="text/css" href="project01.css">
+        <link rel="stylesheet" type="text/css" href="login.css">
     </head>
     <body>
         <?php include 'navBar.php';?>
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="submit">
             </form>
             <?php echo $error; ?>
-            <div id="youth"><a href="signup.php">Create an account</a></div>
+            <div id="signup"><a href="signup.php">Create an account</a></div>
         </div>
         <div class="footer">
 		<?php include 'navBar.php';?>
