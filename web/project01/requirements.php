@@ -10,7 +10,7 @@
 	$youth_name = $youth_rows[0]['name'];
 
 	//get youth's requirements based on id
-	//$statement = $db->query('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+	//$statement = $db->query('SELECT name, learn, act, share, comments FROM requirements WHERE youth_id=:youth_id');
 	//$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 	//$statement->execute();
 
@@ -18,10 +18,10 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// Insert into db
 	
-		$query = 'INSERT INTO requirements (name, learn, act, share, comments, journal) VALUES (:name, :learn, :act, :share, :comments, :journal)';
+		$query = 'INSERT INTO requirements (name, learn, act, share, comments) VALUES (:name, :learn, :act, :share, :comments)';
 		$stmt = $db->prepare($query);
 		$pdo = $stmt->execute(array(':name' => $_POST['name'], ':learn' => $_POST['learn'], ':act' => $_POST['act'], 
-			':share' => $_POST['share'], ':comments' => $_POST['comments'], ':journal' => $_POST['journal']));
+			':share' => $_POST['share'], ':comments' => $_POST['comments']));
 	
 		$newId = $db->lastInsertId('requirements_id_seq');
 
@@ -46,7 +46,7 @@
 	
 		
 			<?php
-			$statement = $db->prepare('SELECT name, learn, act, share, comments, journal FROM requirements WHERE youth_id=:youth_id');
+			$statement = $db->prepare('SELECT name, learn, act, share, comments FROM requirements WHERE youth_id=:youth_id');
 			$statement->bindValue(':youth_id', $youth_id, PDO::PARAM_INT);
 			$statement->execute();
 			while ($row = $statement->fetch(PDO::FETCH_ASSOC)): ?>
@@ -58,7 +58,6 @@
 					<label> Act - </label><input type="checkbox" name="act" value="1" <?php echo ($row['act']==1 ? 'checked' : '');?> />
 					<label> Share - </label><input type="checkbox" name="share" value="1" <?php echo ($row['share']==1 ? 'checked' : '');?> />
 					<label> Comment - </label><input id="comments" type="text" name="comments" value="<?php echo($row['comments']); ?>" /><br>
-					<label> Journal - </label><input id="journal" type="text" name="journal" value="<?php echo($row['journal']); ?>" /><br>
 					<input type="submit">
 				</form>
 				<br>
